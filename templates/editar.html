@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edição</title>
+</head>
+<body>
+<form action="" method="post">
+  <label for="name">Identifique seu nome (Primeiro e Último):</label><br>
+  <input type="text" id="name" name="name" placeholder="Nome" value="{{item.name}}"><br>
+  <label for="email">Informe o seu email:</label><br>
+  <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" value="{{item.email}}"><br>
+  <label for="tel">Informe o seu número de telefone:</label><br>
+  <input type="tel" id="tel" name="tel" ng-pattern="/^([1-9]{2})[0-9]{4,5}-[0-9]{4}$/" value="{{item.tel}}"><br>
+  <label for="age"> Informe sua idade:</label><br>
+  <input type="number" id="age" name="age" min="0" step="1" value="{{item.age}}"><br>
+  <br><input type="submit" value="Submit"><br>
+</form>
+
+
+</body>
+</html>
